@@ -8,7 +8,11 @@ const Input = (props) => {
   return (
     <div className={classes["input-1"]}>
       <label className={classes["input-label"]}>{props.label}</label>
-      <input type={props.type} onInput={changeInputHandler} />
+      <input
+        type={props.type}
+        onInput={changeInputHandler}
+        value={props.value}
+      />
     </div>
   );
 };
