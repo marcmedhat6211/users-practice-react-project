@@ -1,0 +1,24 @@
+.error-message-container {
+  height: 20px;
+  width: 100%;
+  padding: 16px;
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 0, 0, 30%);
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message-container.show {
+  bottom: 0;
+}
+
+.error-message-container .message-text {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin: 0;
+}
