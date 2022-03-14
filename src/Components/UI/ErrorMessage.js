@@ -14,6 +14,19 @@ const ErrorMessageContainer = (props) => {
   );
 };
 
+/**
+ * FRAGMENTS:
+ *  Fragments are used to make the code cleaner
+ *  it allows you to overcome the react issue of having one root element in each component
+ */
+
+/**
+ * REACT PORTALS:
+ *  React portals is all about making your code cleaner and symantically right
+ *  it allows you to choose a place in your html document where you want to add the part you want to add
+ *  it's usually used with error messages, modals, etc..
+ *  the components that are generally used over the whole application
+ */
 const ErrorMessage = (props) => {
   return (
     <React.Fragment>
